@@ -1,0 +1,22 @@
+.footer {
+  background-color: #f7ede2;
+  height: 10vh;
+  position: relative;
+  /* position: ;fixed */
+}
+.footer small {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.footer a {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  margin-right: 0.75rem;
+}

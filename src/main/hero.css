@@ -1,0 +1,24 @@
+.hero {
+  background-color: #dad7cd;
+  text-align: center;
+  height: 80vh;
+}
+.hero ul {
+  display: inline-block;
+  text-align: left;
+  /* list-style-type: circle; */
+}
+.hero h1 {
+  font-size: 3rem;
+  padding-top: 5vh;
+  margin-right: 18vw;
+  margin-top: 0;
+}
+.hero li {
+  font-size: 2rem;
+  padding: 0.6rem;
+}
+.hero a {
+  text-decoration: none;
+  color: inherit;
+}
