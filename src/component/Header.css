@@ -1,16 +1,39 @@
 .header {
-  height: 30vh;
-  background-color: #52796f;
-  position: relative;
-  text-align: center;
-  margin-bottom: none;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
 }
-.header h1 {
-  font-size: 5rem;
-  text-shadow: 5px 5px 10px #ffffff;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  margin: 20vh 5vw;
 }
+.nodiabetes-img {
+  width: 50vw;
+  margin-top: 5vh;
+  height: min-content;
+  box-shadow: 25px 25px 10px 5px grey;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+}
+h1 {
+  margin-top: 10vh;
+  font-size: 3rem;
+}
+p {
+  font-size: 1.8rem;
+  padding-left: 1vw;
+  padding-top: 1rem;
+}
+.checkblood {
+  width: 18vw;
+  margin-left: auto;
+  margin-top: auto;
+}
+

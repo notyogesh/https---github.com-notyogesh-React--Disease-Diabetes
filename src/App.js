@@ -1,15 +1,17 @@
 import Header from "./component/Header";
-import Hero from "./main/Hero";
 import Footer from "./component/Footer";
 import Content from "./main/content";
+import Tab from "./main/tab";
 import "./app.css";
+import Table from "./main/Table";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Hero />
       <Content />
+      <Tab />
+      <Table />
       <Footer />
     </div>
   );
