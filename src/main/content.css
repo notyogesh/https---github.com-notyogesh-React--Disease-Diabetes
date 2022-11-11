@@ -1,20 +1,26 @@
+/* #pages:before {
+  display: block;
+  content: " ";
+  margin-top: 20vh;
+  height: 20vh;
+  visibility: hidden;
+} */
 .section-active {
-  padding: 5rem 9rem;
+  padding: 10vh 10vw;
   border-top: 1px solid #ddd;
   transition: transform 1s, opacity 1s;
   /* background-color: red; */
-  height: auto;
-  height: 80vh;
+  max-width: 100vw;
+  min-height: 80vh;
   align-items: left;
 }
 .buttons {
   display: flex;
   flex-direction: row;
   position: sticky;
-  top: 10vh;
+  margin-left: 80vw;
+  transform: translateY(-10vh);
   z-index: 100;
-  /* align-self: right; */
-  margin-left: 38vw;
 }
 .pagebuttons {
   width: 3rem;
@@ -33,17 +39,20 @@
 
 .section {
   display: none;
-  /* display: flex;
-  flex-direction: row;
-  overflow: hidden; */
 }
 #eat {
   display: flex;
   flex-direction: row;
 }
+
+.section-active h1 {
+  font-size: 2.2rem;
+}
 .section-active p {
-  margin-top: 5vh;
-  margin-left: 5vw;
+  /* margin-top: 54h;
+  margin-left: 5vw; */
+  margin: 5vh 5vw;
+  font-size: 1.35rem;
 }
 .section-active img {
   width: 40vw;
@@ -51,4 +60,36 @@
 }
 #eat p {
   margin-left: 0;
+}
+@media (max-width: 600px) {
+  #section1 p {
+    font-size: 1.35rem;
+    /* letter-spacing: 1px; */
+  }
+  .section-active p {
+    font-size: 1.4rem;
+  }
+  #eat {
+    display: flex;
+    flex-direction: column;
+  }
+  #eat img {
+    margin-left: 40vw;
+  }
+}
+@media (max-width: 768px) {
+  .section-active p {
+    font-size: 1.6rem;
+  }
+  #section5 {
+    padding: 10vh 3vw;
+  }
+  .section-active img {
+    width: 55vw;
+    margin: 0;
+  }
+  #eat p {
+    font-size: small;
+    margin-right: 0;
+  }
 }

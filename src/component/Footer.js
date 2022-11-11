@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <p>Created and written By yogesh @{year}</p>
-      <div className="icons">
+      <section className="icons">
         <a
           href="mailto:yogeshreo@gmail.com"
           target="_blank"
@@ -47,7 +47,7 @@ export default function Footer() {
         >
           <img src={twitter} alt="twitter" />
         </a>
-      </div>
+      </section>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import disease from "../data.js";
 import "./tab.css";
 import React, { useState } from "react";
 
-export default function Boxes() {
+export default function Tab() {
   const [tab, setTab] = useState(1);
   const toggleTab = (i) => {
     setTab(i);

@@ -15,17 +15,7 @@ export default function Content() {
   const whatToEat = makeList(disease.what_to_eat);
 
   return (
-    <div>
-      <div className="buttons">
-        <button className="pagebuttons" onClick={() => pageLeft(1)}>
-          &#171;
-        </button>
-
-        <button className="displaybutton">{page}</button>
-        <button className="pagebuttons" onClick={() => pageRight(1)}>
-          &#187;
-        </button>
-      </div>
+    <div className="pages" id="pages">
       <section
         className={page === 1 ? "section-active" : "section"}
         id="section1"
@@ -64,6 +54,16 @@ export default function Content() {
           <img src={fruits} alt="fruits" />
         </section>
       </section>
+      <div className="buttons">
+        <button className="pagebuttons" onClick={() => pageLeft(1)}>
+          &#171;
+        </button>
+
+        <button className="displaybutton">{page}</button>
+        <button className="pagebuttons" onClick={() => pageRight(1)}>
+          &#187;
+        </button>
+      </div>
     </div>
   );
 }

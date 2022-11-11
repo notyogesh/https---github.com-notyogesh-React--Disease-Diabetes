@@ -14,39 +14,38 @@ export default function Table() {
       <input
         onChange={onChange}
         type="search"
-        placeholder="search..."
+        placeholder="search for a hospital..."
         className="tableinput"
       />
-      <div className="table">
-        <table>
-          <tr>
-            <th>Govt</th>
-            <th>Private</th>
-          </tr>
 
-          <tr>
-            <td>
-              <ol>
-                {disease.hospital.government
-                  .filter((item) => item.toLowerCase().includes(items))
-                  .map((li, i) => (
-                    <li key={i}>{li} </li>
-                  ))}
-              </ol>
-            </td>
-            <td>
-              <ol>
-                {" "}
-                {disease.hospital.private
-                  .filter((item) => item.toLowerCase().includes(items))
-                  .map((li, i) => (
-                    <li key={i}>{li} </li>
-                  ))}
-              </ol>
-            </td>
-          </tr>
-        </table>
-      </div>
+      <table className="table">
+        <tr>
+          <th>Govt</th>
+          <th>Private</th>
+        </tr>
+
+        <tr>
+          <td>
+            <ol>
+              {disease.hospital.government
+                .filter((item) => item.toLowerCase().includes(items))
+                .map((li, i) => (
+                  <li key={i}>{li} </li>
+                ))}
+            </ol>
+          </td>
+          <td>
+            <ol>
+              {" "}
+              {disease.hospital.private
+                .filter((item) => item.toLowerCase().includes(items))
+                .map((li, i) => (
+                  <li key={i}>{li} </li>
+                ))}
+            </ol>
+          </td>
+        </tr>
+      </table>
     </div>
   );
 }

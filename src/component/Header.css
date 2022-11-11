@@ -17,23 +17,41 @@
   height: min-content;
   box-shadow: 25px 25px 10px 5px grey;
 }
-section {
+.header section {
   display: flex;
   flex-direction: column;
   margin-left: 5vw;
 }
-h1 {
+.header h1 {
   margin-top: 10vh;
   font-size: 3rem;
+  letter-spacing: 1px;
 }
-p {
+.header p {
   font-size: 1.8rem;
   padding-left: 1vw;
   padding-top: 1rem;
+  letter-spacing: 1px;
 }
 .checkblood {
   width: 18vw;
   margin-left: auto;
   margin-top: auto;
 }
-
+@media (max-width: 600px) {
+  .nodiabetes-img {
+    width: 80vw;
+    padding-top: 5vh;
+    box-shadow: none;
+  }
+  .header-content {
+    /* display: flex; */
+    flex-direction: column;
+    margin: 10vh 5vw;
+  }
+  .header section {
+    display: flex;
+    margin-left: 0;
+    /* flex-direction: row; */
+  }
+}

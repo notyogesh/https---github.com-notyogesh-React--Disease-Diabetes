@@ -36,11 +36,11 @@ const disease = {
     "Emotional support.",
   ],
   what_to_eat: [
-    "vegetables __ includes broccoli, carrots, greens, peppers, and tomatoes.",
-    "fruits __oranges, melon, berries, apples, bananas, and grapes.",
-    "grains __at least half of your grains for the day should be whole grains. ",
+    "vegetables : broccoli, carrots, greens, peppers, and tomatoes.",
+    "fruits : oranges, melon, berries, apples, bananas, and grapes.",
+    "grains : at least half of your grains for the day should be whole grains. ",
     "protein",
-    "dairy __nonfat or low fat",
+    "dairy : nonfat or low fat",
   ],
 
   hospital: {
